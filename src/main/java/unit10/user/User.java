@@ -1,5 +1,7 @@
 package unit10.user;
 
+import unit11.model.Role;
+
 import java.util.Date;
 import java.util.List;
 
@@ -16,7 +18,7 @@ public interface User {
 
     void setDate(Date date);
 
-    List<String> getRoles();
+    List<Role> getRoles();
 
-    void setRoles(List<String> roles);
+    void setRoles(List<Role> roles);
 }

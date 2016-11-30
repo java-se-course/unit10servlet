@@ -1,5 +1,7 @@
 package unit10.user;
 
+import unit11.model.Role;
+
 import java.util.Date;
 import java.util.List;
 
@@ -7,7 +9,7 @@ public class UserBean implements User {
     private String firstName;
     private String lastName;
     private Date date;
-    private List<String> roles;
+    private List<Role> roles;
 
     public String getFirstName() {
         return firstName;
@@ -33,11 +35,11 @@ public class UserBean implements User {
         this.date = date;
     }
 
-    public List<String> getRoles() {
+    public List<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(List<String> roles) {
+    public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
 }

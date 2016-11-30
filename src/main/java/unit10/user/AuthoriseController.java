@@ -1,5 +1,7 @@
 package unit10.user;
 
+import unit11.model.Role;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +21,11 @@ public class AuthoriseController extends HttpServlet {
 
         final User user = new UserBean();
         user.setFirstName(req.getParameter("firstName"));
-        user.setLastName(req.getParameter("lastName"));
-        user.setRoles(Arrays.asList("reader", "author", "admin"));
+        user.setLastName(req.getParameter("lastName") + " ");
+        user.setRoles(Arrays.asList(
+                new Role(false, false, "reader"),
+                new Role(false, true, "authorRoleName"),
+                new Role(true, false, "adminRoleName")));
 //        user.setDate(new Date());
         req.setAttribute("user", user);
 

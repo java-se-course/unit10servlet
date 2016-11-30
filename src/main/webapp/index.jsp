@@ -1,9 +1,14 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
+
 <h2>Hello World!</h2>
+<a href="locale">Go to locale.</a><br/>
+
 <a href="book" >Go to book.</a>
 <a href="books" >Go to books.</a>
 <a href="book_list" >Go to book list.</a><br/>
